@@ -1,0 +1,25 @@
+{
+  "name": "dev-toolbox",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "tauri": "tauri"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@tauri-apps/cli": "1.0.0-rc.10",
+    "typescript": "^4.6.3",
+    "vite": "^2.8.6",
+    "vite-plugin-solid": "^2.2.6",
+    "vite-plugin-windicss": "^1.8.4"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "1.0.0-rc.5",
+    "solid-app-router": "^0.3.2",
+    "solid-js": "^1.3.13"
+  }
+}
