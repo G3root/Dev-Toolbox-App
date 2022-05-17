@@ -1,7 +1,7 @@
 /* @refresh reload */
 import { render } from "solid-js/web";
 import { Router } from "solid-app-router";
-import 'windi.css';
+import "windi.css";
 import App from "./App";
 
 render(
