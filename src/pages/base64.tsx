@@ -1,5 +1,5 @@
 import type { Component } from "solid-js";
-import { Column, TwoColumns, ErrorMessage } from "../components";
+import { Column, TwoColumns, ErrorMessage, TextArea } from "../components";
 import { createSignal, createEffect } from "solid-js";
 
 export const Base64: Component = () => {
@@ -20,7 +20,7 @@ export const Base64: Component = () => {
     try {
       const result = btoa(unescape(encodeURIComponent(value)));
       setEncoded(result);
-    } catch (err) {
+    } catch (err: any) {
       console.error(err);
       setEncodingError(err.message);
     }
@@ -33,7 +33,7 @@ export const Base64: Component = () => {
     try {
       const result = decodeURIComponent(escape(atob(value)));
       setDecoded(result);
-    } catch (err) {
+    } catch (err: any) {
       console.error(err);
       setDecodingError(err.message);
     }
@@ -49,22 +49,20 @@ export const Base64: Component = () => {
     <TwoColumns>
       <Column title="Text">
         <ErrorMessage classList={{ "mb-2": true }} message={encodingError()} />
-        <textarea
+        <TextArea
           value={decoded()}
           onInput={handleDecodedChange}
           rows={10}
           id="input-el"
-          class="w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full text-sm border border-gray-300 rounded-md"
         />
       </Column>
       <Column title="Encoded">
         <ErrorMessage classList={{ "mb-2": true }} message={decodingError()} />
-        <textarea
+        <TextArea
           value={encoded()}
           onInput={handleEncodedChange}
           rows={10}
           id="input-el"
-          class="w-full shadow-sm focus:ring-blue-500 focus:border-blue-500 mt-1 block w-full text-sm border border-gray-300 rounded-md"
         />
       </Column>
     </TwoColumns>
