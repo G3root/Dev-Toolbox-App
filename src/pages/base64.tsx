@@ -1,6 +1,12 @@
 import type { Component } from "solid-js";
-import { Column, TwoColumns, ErrorMessage, TextArea } from "../components";
-import { createSignal, createEffect } from "solid-js";
+import {
+  Column,
+  TwoColumns,
+  ErrorMessage,
+  TextArea,
+  ClipboardButton,
+} from "../components";
+import { createSignal } from "solid-js";
 
 export const Base64: Component = () => {
   const [encoded, setEncoded] = createSignal("");
@@ -39,31 +45,31 @@ export const Base64: Component = () => {
     }
   };
 
-  createEffect(() => {
-    console.log("encodingError :", encodingError());
-  });
-  createEffect(() => {
-    console.log("decodingError :", decodingError());
-  });
   return (
     <TwoColumns>
-      <Column title="Text">
-        <ErrorMessage classList={{ "mb-2": true }} message={encodingError()} />
+      <Column
+        title="Text"
+        renderRight={() => <ClipboardButton value={decoded()} />}
+      >
         <TextArea
           value={decoded()}
           onInput={handleDecodedChange}
           rows={10}
           id="input-el"
         />
+        <ErrorMessage classList={{ "mt-2": true }} message={encodingError()} />
       </Column>
-      <Column title="Encoded">
-        <ErrorMessage classList={{ "mb-2": true }} message={decodingError()} />
+      <Column
+        title="Encoded"
+        renderRight={() => <ClipboardButton value={encoded()} />}
+      >
         <TextArea
           value={encoded()}
           onInput={handleEncodedChange}
           rows={10}
           id="input-el"
         />
+        <ErrorMessage classList={{ "mt-2": true }} message={decodingError()} />
       </Column>
     </TwoColumns>
   );
