@@ -11,9 +11,9 @@ const SideBarLink: Component<{ link: string; name: string }> = ({
     <Link
       href={link}
       classList={{
-        "px-4 py-1 rounded-md font-medium text-sm flex no-underline": true,
-        "bg-blue-600 text-white": Boolean(isActive()),
-        "text-black hover:bg-slate-200": !Boolean(isActive()),
+        "px-4 py-1.5 rounded-md font-medium text-sm flex no-underline ": true,
+        "bg-purple-600 text-white": Boolean(isActive()),
+        "hover:bg-purple-300/20 text-black": !Boolean(isActive()),
       }}
     >
       {name}
@@ -23,7 +23,7 @@ const SideBarLink: Component<{ link: string; name: string }> = ({
 
 export const Sidebar: Component = ({ children }) => {
   return (
-    <nav className="relative flex flex-col overflow-y-auto h-full max-h-screen min-h-screen flex-none border-r dark:border-gray-800 pb-0 relative w-56 dark:bg-gray-900 bg-gray-50 border-gray-100">
+    <nav className="relative flex flex-col overflow-y-auto h-full max-h-screen min-h-screen flex-none border-r dark:border-gray-800 pb-0 relative w-56   border-gray-100">
       <div className="flex-1 px-2 py-3 space-y-1">
         <SideBarLink link="/" name="Home" />
         <For each={tools}>
