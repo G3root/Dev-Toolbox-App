@@ -12,7 +12,7 @@ export const ClipboardButton: Component<{ value: string }> = (props) => {
           setCopied(false);
         }, 2000);
       }}
-      className="flex space-x-2 flex-none items-center justify-center cursor-pointer leading-none transition-all font-semibold px-4 py-2 text-sm opacity-100 rounded-md text-gray-700 hover:text-gray-800 shadow-xs bg-white border border-gray-400 border-opacity-30  hover:border-opacity-50 hover:shadow-sm"
+      class="flex space-x-2 flex-none items-center justify-center cursor-pointer leading-none transition-all font-semibold px-4 py-2 text-sm opacity-100 rounded-md text-gray-700 hover:text-gray-800 shadow-xs bg-white border border-gray-400 border-opacity-30  hover:border-opacity-50 hover:shadow-sm"
     >
       <svg
         aria-hidden={true}
@@ -47,7 +47,7 @@ export const ClipboardButton: Component<{ value: string }> = (props) => {
         />
       </svg>
 
-      <span className="ml-1">{copied() ? "Copied!" : "Copy"}</span>
+      <span class="ml-1">{copied() ? "Copied!" : "Copy"}</span>
     </button>
   );
 };

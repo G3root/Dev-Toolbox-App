@@ -23,8 +23,8 @@ const SideBarLink: Component<{ link: string; name: string }> = ({
 
 export const Sidebar: Component = ({ children }) => {
   return (
-    <nav className="relative flex flex-col overflow-y-auto h-full max-h-screen min-h-screen flex-none border-r dark:border-gray-800 pb-0 relative w-56   border-gray-100">
-      <div className="flex-1 px-2 py-3 space-y-1">
+    <nav class="relative flex flex-col overflow-y-auto h-full max-h-screen min-h-screen flex-none border-r dark:border-gray-800 pb-0 relative w-56   border-gray-100">
+      <div class="flex-1 px-2 py-3 space-y-1">
         <SideBarLink link="/" name="Home" />
         <For each={tools}>
           {(item) => <SideBarLink link={item.link} name={item.name} />}
