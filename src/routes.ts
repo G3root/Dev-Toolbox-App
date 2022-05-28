@@ -1,7 +1,7 @@
 import { lazy } from "solid-js";
 import type { RouteDefinition } from "solid-app-router";
 
-import { Home, Base64, MarkdownToHtml, Base64Image } from "./pages";
+import { Home, Base64, MarkdownToHtml, Base64Image, UrlEncode } from "./pages";
 
 export const routes: RouteDefinition[] = [
   {
@@ -15,6 +15,10 @@ export const routes: RouteDefinition[] = [
   {
     path: "/base64-image",
     component: Base64Image,
+  },
+  {
+    path: "/url-encode",
+    component: UrlEncode,
   },
   {
     path: "/markdown-to-html",

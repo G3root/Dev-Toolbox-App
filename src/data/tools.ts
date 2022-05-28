@@ -16,4 +16,8 @@ export const tools: Tools[] = [
     name: "Image to Base64",
     link: "/base64-image",
   },
+  {
+    name: "URL Encode/Decode",
+    link: "/url-encode",
+  },
 ].sort((a, b) => (a.name > b.name ? 1 : -1));
