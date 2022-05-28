@@ -1,10 +1,11 @@
 import copy from "copy-text-to-clipboard";
 import { Component, createSignal } from "solid-js";
+import { Button } from "./button";
 
 export const ClipboardButton: Component<{ value: string }> = (props) => {
   const [copied, setCopied] = createSignal(false);
   return (
-    <button
+    <Button
       onClick={() => {
         copy(props.value);
         setCopied(true);
@@ -12,7 +13,9 @@ export const ClipboardButton: Component<{ value: string }> = (props) => {
           setCopied(false);
         }, 2000);
       }}
-      class="flex space-x-2 flex-none items-center justify-center cursor-pointer leading-none transition-all font-semibold px-4 py-2 text-sm opacity-100 rounded-md text-gray-700 hover:text-gray-800 shadow-xs bg-white border border-gray-400 border-opacity-30  hover:border-opacity-50 hover:shadow-sm"
+      classList={{
+        "flex space-x-2 flex-none items-center justify-center": true,
+      }}
     >
       <svg
         aria-hidden={true}
@@ -48,6 +51,6 @@ export const ClipboardButton: Component<{ value: string }> = (props) => {
       </svg>
 
       <span class="ml-1">{copied() ? "Copied!" : "Copy"}</span>
-    </button>
+    </Button>
   );
 };
