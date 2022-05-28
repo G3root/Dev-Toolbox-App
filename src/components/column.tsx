@@ -1,7 +1,11 @@
 import type { Component, JSX } from "solid-js";
 
 export const TwoColumns: Component = ({ children }) => {
-  return <div class="grid grid-cols-2 divide-x min-h-screen">{children}</div>;
+  return (
+    <div class="grid grid-cols-1 lg:grid-cols-2 divide-x min-h-screen">
+      {children}
+    </div>
+  );
 };
 
 export const Column: Component<{
