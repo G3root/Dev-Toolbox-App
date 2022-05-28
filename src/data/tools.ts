@@ -1,4 +1,9 @@
-export const tools = [
+interface Tools {
+  name: string;
+  link: string;
+}
+
+export const tools: Tools[] = [
   {
     name: "Base64 Encode/Decode",
     link: "/base64",
