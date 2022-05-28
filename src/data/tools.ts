@@ -12,4 +12,8 @@ export const tools: Tools[] = [
     name: "Markdown to HTML",
     link: "/markdown-to-html",
   },
+  {
+    name: "Image to Base64",
+    link: "/base64-image",
+  },
 ].sort((a, b) => (a.name > b.name ? 1 : -1));
