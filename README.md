@@ -1,34 +1,58 @@
-## Usage
+<h1 align="center">Dev Toolbox 🧰</h1>
+<h3 align="center">A collection of tools for developers in one place</h3>
 
-Those templates dependencies are maintained via [pnpm](https://pnpm.io) via `pnpm up -Lri`.
+> **Note**
+> This project is inspired and shares some code from [tooling.one](https://github.com/egoist/tooling.one) by [@egoist](https://github.com/egoist) which is a webapp written in React. show some love by starring ⭐.
 
-This is the reason you see a `pnpm-lock.yaml`. That being said, any package manager will work. This file can be safely be removed once you clone a template.
+## ✨ Features
+
+- 📦 Small package size and less resource intensive.
+- 🔒 Privacy first, everything you paste into the app never leaves your machine.
+- 📴 Works entirely offline.
+- 🌙 Built-in Dark mode (WIP).
+
+> **Warning**
+> This is still a work in progress.
+
+## 🏃 Running Locally
 
 ```bash
-$ npm install # or pnpm install or yarn install
+git clone https://github.com/G3root/Dev-Toolbox-App
 ```
 
-### Learn more on the [Solid Website](https://solidjs.com) and come chat with us on our [Discord](https://discord.com/invite/solidjs)
+```bash
+cd Dev-Toolbox-App
+```
 
-## Available Scripts
+```bash
+pnpm install
+```
 
-In the project directory, you can run:
+```bash
+pnpm tauri dev
+```
 
-### `npm dev` or `npm start`
+## 🛠 Built With
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [Tauri](https://tauri.studio/) - A framework for building tiny, blazing fast binaries for all major desktop platforms.
+- [Solid.js](https://www.solidjs.com/) - A declarative, efficient and flexible JavaScript library for building user interfaces.
+- [Windi CSS](https://windicss.org) - Next generation utility-first CSS framework.
+- [TypeScript](https://www.typescriptlang.org/) - JavaScript with syntax for types.
+- [Rust](https://www.rust-lang.org/) - A language empowering everyone to build reliable and efficient software.
 
-The page will reload if you make edits.<br>
+## 👨‍💻 Contributing
 
-### `npm run build`
+All contributions are welcome. Even, if you notice a typo or a grammar mistake (English is not my primary language). Feel free to open an issue or create a pull request ❤️.
 
-Builds the app for production to the `dist` folder.<br>
-It correctly bundles Solid in production mode and optimizes the build for the best performance.
+## 📩 Contact
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+I know that first and foremost you are looking for a tool to solve your problems, but if you enjoy
+it that much, why not tell me? it's a pleasure to hear from you 😉
 
-## Deployment
+DM me at 👇
 
-You can deploy the `dist` folder to any static host provider (netlify, surge, now, etc.)
+- Twitter: <a href="https://twitter.com/nfs__21" target="_blank">@nfs\_\_21</a>
+
+Or Mail me at 👇
+
+- Email: nafeesnazik21@gmail.com
