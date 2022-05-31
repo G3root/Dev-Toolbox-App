@@ -22,6 +22,10 @@ const toolsData: Tools[] = [
     name: "URL Encode/Decode",
     link: "/url-encode",
   },
+  {
+    name: "LoremIpsum Generator",
+    link: "/lorem",
+  },
 ];
 
 export const tools = toolsData.sort((a, b) => (a.name > b.name ? 1 : -1));

@@ -1,7 +1,14 @@
 import { lazy } from "solid-js";
 import type { RouteDefinition } from "solid-app-router";
 
-import { Home, Base64, MarkdownToHtml, Base64Image, UrlEncode } from "./pages";
+import {
+  Home,
+  Base64,
+  MarkdownToHtml,
+  Base64Image,
+  UrlEncode,
+  LoremIpsum,
+} from "./pages";
 
 export const routesData = [
   {
@@ -23,6 +30,10 @@ export const routesData = [
   {
     path: "/markdown-to-html" as const,
     component: MarkdownToHtml,
+  },
+  {
+    path: "/lorem" as const,
+    component: LoremIpsum,
   },
   {
     path: "**" as const,
