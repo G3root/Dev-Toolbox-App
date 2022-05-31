@@ -1,9 +1,11 @@
-interface Tools {
-  name: string;
-  link: string;
-}
+import { UnionPath } from "../types";
 
-export const tools: Tools[] = [
+type Tools = {
+  name: string;
+  link: UnionPath;
+};
+
+const toolsData: Tools[] = [
   {
     name: "Base64 Encode/Decode",
     link: "/base64",
@@ -20,4 +22,6 @@ export const tools: Tools[] = [
     name: "URL Encode/Decode",
     link: "/url-encode",
   },
-].sort((a, b) => (a.name > b.name ? 1 : -1));
+];
+
+export const tools = toolsData.sort((a, b) => (a.name > b.name ? 1 : -1));
