@@ -9,7 +9,8 @@ fn main() {
     tauri::Builder::default()
         .invoke_handler(tauri::generate_handler![
             cmd::my_custom_command,
-            cmd::generate_html
+            cmd::generate_html,
+            cmd::generate_lorem_ipsum
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
