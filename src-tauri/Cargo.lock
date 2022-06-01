@@ -58,6 +58,7 @@ name = "app"
 version = "0.1.0"
 dependencies = [
  "comrak",
+ "lipsum",
  "serde",
  "serde_json",
  "tauri",
@@ -1495,6 +1496,16 @@ name = "linked-hash-map"
 version = "0.5.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "7fb9b38af92608140b86b693604b9ffcc5824240a484d1ecd4795bacb2fe88f3"
+
+[[package]]
+name = "lipsum"
+version = "0.8.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "89c83f41a6f8ace1c47f11efebb94a96e4d9458d15ea84593bdbabdfd6b004c7"
+dependencies = [
+ "rand 0.8.5",
+ "rand_chacha 0.3.1",
+]
 
 [[package]]
 name = "lock_api"
