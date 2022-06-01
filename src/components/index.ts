@@ -5,3 +5,5 @@ export * from "./textarea";
 export * from "./clipboard-button";
 export * from "./button";
 export * from "./code-block";
+export * from "./text-input";
+export * from "./label";
