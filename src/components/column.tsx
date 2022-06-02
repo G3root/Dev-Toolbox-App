@@ -13,7 +13,7 @@ export const Column: Component<{
   renderRight?: () => JSX.Element;
 }> = ({ title, children, renderRight }) => {
   return (
-    <div class="p-5">
+    <div class="p-5 overflow-auto">
       <header class="flex items-center justify-between">
         <span class="font-bold text-2xl">{title}</span>
         <div class="flex space-x-3 items-center">
