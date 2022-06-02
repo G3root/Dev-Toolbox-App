@@ -8,6 +8,7 @@ import {
   Base64Image,
   UrlEncode,
   LoremIpsum,
+  TextCase,
 } from "./pages";
 
 export const routesData = [
@@ -30,6 +31,10 @@ export const routesData = [
   {
     path: "/markdown-to-html" as const,
     component: MarkdownToHtml,
+  },
+  {
+    path: "/text-case" as const,
+    component: TextCase,
   },
   {
     path: "/lorem" as const,

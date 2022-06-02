@@ -26,6 +26,10 @@ const toolsData: Tools[] = [
     name: "LoremIpsum Generator",
     link: "/lorem",
   },
+  {
+    name: "Text Case",
+    link: "/text-case",
+  },
 ];
 
 export const tools = toolsData.sort((a, b) => (a.name > b.name ? 1 : -1));
