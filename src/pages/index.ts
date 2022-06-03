@@ -5,3 +5,4 @@ export * from "./base64-image";
 export * from "./url-encode";
 export * from "./lorem";
 export * from "./text-case";
+export * from "./hash-generator";

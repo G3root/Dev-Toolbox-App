@@ -30,6 +30,10 @@ const toolsData: Tools[] = [
     name: "Text Case",
     link: "/text-case",
   },
+  {
+    name: "Hash Generator",
+    link: "/hash-generator",
+  },
 ];
 
 export const tools = toolsData.sort((a, b) => (a.name > b.name ? 1 : -1));

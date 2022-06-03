@@ -9,6 +9,7 @@ import {
   UrlEncode,
   LoremIpsum,
   TextCase,
+  HashGenerator,
 } from "./pages";
 
 export const routesData = [
@@ -39,6 +40,10 @@ export const routesData = [
   {
     path: "/lorem" as const,
     component: LoremIpsum,
+  },
+  {
+    path: "/hash-generator" as const,
+    component: HashGenerator,
   },
   {
     path: "**" as const,
