@@ -21,39 +21,39 @@ pub fn generate_lorem_ipsum(length: usize) -> String {
 }
 
 #[derive(serde::Serialize)]
-pub struct TextCaseItem {
+pub struct NameValueResp {
     name: String,
     value: String,
 }
 
 #[command]
-pub fn text_case(text: String) -> Vec<TextCaseItem> {
+pub fn text_case(text: String) -> Vec<NameValueResp> {
     vec![
-        TextCaseItem {
+        NameValueResp {
             name: "Camel Case".to_string(),
             value: text.to_case(Case::Camel),
         },
-        TextCaseItem {
+        NameValueResp {
             name: "Pascal Case".to_string(),
             value: text.to_case(Case::Pascal),
         },
-        TextCaseItem {
+        NameValueResp {
             name: "Snake Case".to_string(),
             value: text.to_case(Case::Snake),
         },
-        TextCaseItem {
+        NameValueResp {
             name: "Kebab Case".to_string(),
             value: text.to_case(Case::Kebab),
         },
-        TextCaseItem {
+        NameValueResp {
             name: "Cobol Case".to_string(),
             value: text.to_case(Case::Cobol),
         },
-        TextCaseItem {
+        NameValueResp {
             name: "Upper Snake Case".to_string(),
             value: text.to_case(Case::UpperSnake),
         },
-        TextCaseItem {
+        NameValueResp {
             name: "Title Case".to_string(),
             value: text.to_case(Case::Title),
         },
