@@ -9,7 +9,7 @@
 - 📦 Small package size and less resource intensive.
 - 🔒 Privacy first, everything you paste into the app never leaves your machine.
 - 📴 Works entirely offline.
-- 🌙 Built-in Dark mode (WIP).
+- 🌙 Built-in Dark mode.
 
 > **Warning**
 > This is still a work in progress.
