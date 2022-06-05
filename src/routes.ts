@@ -1,49 +1,38 @@
 import { lazy } from "solid-js";
 import type { RouteDefinition } from "solid-app-router";
 
-import {
-  Home,
-  Base64,
-  MarkdownToHtml,
-  Base64Image,
-  UrlEncode,
-  LoremIpsum,
-  TextCase,
-  HashGenerator,
-} from "./pages";
-
 export const routesData = [
   {
     path: "/" as const,
-    component: Home,
+    component: lazy(() => import("./pages/home")),
   },
   {
     path: "/base64" as const,
-    component: Base64,
+    component: lazy(() => import("./pages/base64")),
   },
   {
     path: "/base64-image" as const,
-    component: Base64Image,
+    component: lazy(() => import("./pages/base64-image")),
   },
   {
     path: "/url-encode" as const,
-    component: UrlEncode,
+    component: lazy(() => import("./pages/url-encode")),
   },
   {
     path: "/markdown-to-html" as const,
-    component: MarkdownToHtml,
+    component: lazy(() => import("./pages/markdown-to-html")),
   },
   {
     path: "/text-case" as const,
-    component: TextCase,
+    component: lazy(() => import("./pages/text-case")),
   },
   {
     path: "/lorem" as const,
-    component: LoremIpsum,
+    component: lazy(() => import("./pages/lorem")),
   },
   {
     path: "/hash-generator" as const,
-    component: HashGenerator,
+    component: lazy(() => import("./pages/hash-generator")),
   },
   {
     path: "**" as const,
