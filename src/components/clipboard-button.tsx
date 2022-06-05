@@ -20,7 +20,7 @@ export const ClipboardButton: Component<{ value: string }> = (props) => {
       <svg
         aria-hidden={true}
         xmlns="http://www.w3.org/2000/svg"
-        class="h-5 w-5"
+        class="h-5 w-5 bg-transparent"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -36,7 +36,7 @@ export const ClipboardButton: Component<{ value: string }> = (props) => {
       <svg
         aria-hidden={true}
         xmlns="http://www.w3.org/2000/svg"
-        class="h-5 w-5"
+        class="h-5 w-5 bg-transparent"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -50,7 +50,7 @@ export const ClipboardButton: Component<{ value: string }> = (props) => {
         />
       </svg>
 
-      <span class="ml-1">{copied() ? "Copied!" : "Copy"}</span>
+      <span class="ml-1 bg-transparent">{copied() ? "Copied!" : "Copy"}</span>
     </Button>
   );
 };
