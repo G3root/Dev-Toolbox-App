@@ -21,6 +21,9 @@ tauri = { version = "1.0.0-rc.9", features = ["api-all"] }
 comrak = "0.12.1"
 lipsum = "0.8.1"
 convert_case = "0.1.0"
+md-5 = "0.10.1"
+sha2 = "0.10.2"
+sha3 = "0.10.1"
 
 [features]
 # by default Tauri runs in production mode
