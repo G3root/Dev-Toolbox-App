@@ -20,6 +20,7 @@
     "windicss": "^3.5.3"
   },
   "dependencies": {
+    "@radix-ui/colors": "^0.1.8",
     "@tauri-apps/api": "1.0.0-rc.5",
     "copy-text-to-clipboard": "^3.0.1",
     "solid-app-router": "^0.3.2",
