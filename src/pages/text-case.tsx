@@ -7,17 +7,16 @@ import {
   TextArea,
   TwoColumns,
 } from "../components";
-
-type TextCaseResponse = Array<{ name: string; value: string }>;
+import { NameValueResp } from "../types";
 
 export const TextCase: Component = () => {
   const [input, setInput] = createSignal("");
-  const [value, setValue] = createSignal<TextCaseResponse>([]);
+  const [value, setValue] = createSignal<NameValueResp>([]);
   createEffect(async () => {
     if (input() !== "") {
       const res = (await invoke("text_case", {
         text: input(),
-      })) as TextCaseResponse;
+      })) as NameValueResp;
       setValue(res);
     }
   });
