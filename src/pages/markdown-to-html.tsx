@@ -36,7 +36,7 @@ A [link](http://example.com).
 
 `;
 
-export const MarkdownToHtml: Component = () => {
+const MarkdownToHtml: Component = () => {
   const [input, setInput] = createSignal("");
   const [output, setOutput] = createSignal("");
   const [error, setError] = createSignal("");
@@ -83,3 +83,5 @@ export const MarkdownToHtml: Component = () => {
     </TwoColumns>
   );
 };
+
+export default MarkdownToHtml;

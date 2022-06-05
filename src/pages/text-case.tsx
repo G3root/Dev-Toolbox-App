@@ -9,7 +9,7 @@ import {
 } from "../components";
 import { NameValueResp } from "../types";
 
-export const TextCase: Component = () => {
+const TextCase: Component = () => {
   const [input, setInput] = createSignal("");
   const [value, setValue] = createSignal<NameValueResp>([]);
   createEffect(async () => {
@@ -50,3 +50,5 @@ export const TextCase: Component = () => {
     </TwoColumns>
   );
 };
+
+export default TextCase;

@@ -10,7 +10,7 @@ import {
   ErrorMessage,
 } from "../components";
 
-export const LoremIpsum: Component = () => {
+const LoremIpsum: Component = () => {
   const [value, setValue] = createSignal("");
   const [input, setInput] = createSignal(20);
   const [error, setError] = createSignal("");
@@ -57,3 +57,5 @@ export const LoremIpsum: Component = () => {
     </TwoColumns>
   );
 };
+
+export default LoremIpsum;

@@ -8,7 +8,7 @@ import {
 } from "../components";
 import { createSignal } from "solid-js";
 
-export const Base64: Component = () => {
+const Base64: Component = () => {
   const [encoded, setEncoded] = createSignal("");
   const [decoded, setDecoded] = createSignal("");
   const [encodingError, setEncodingError] = createSignal("");
@@ -74,3 +74,5 @@ export const Base64: Component = () => {
     </TwoColumns>
   );
 };
+
+export default Base64;

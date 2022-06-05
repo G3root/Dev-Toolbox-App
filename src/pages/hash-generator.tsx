@@ -9,7 +9,7 @@ import {
 } from "../components";
 import { NameValueResp } from "../types";
 
-export const HashGenerator: Component = () => {
+const HashGenerator: Component = () => {
   const [input, setInput] = createSignal("");
   const [value, setValue] = createSignal<NameValueResp>([]);
 
@@ -50,3 +50,5 @@ export const HashGenerator: Component = () => {
     </TwoColumns>
   );
 };
+
+export default HashGenerator;

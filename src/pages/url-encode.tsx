@@ -1,7 +1,7 @@
 import { Component, createSignal } from "solid-js";
 import { Column, ErrorMessage, TextArea, TwoColumns } from "../components";
 
-export const UrlEncode: Component = () => {
+const UrlEncode: Component = () => {
   const [encoded, setEncoded] = createSignal("");
   const [decoded, setDecoded] = createSignal("");
   const [encodingError, setEncodingError] = createSignal("");
@@ -51,3 +51,5 @@ export const UrlEncode: Component = () => {
     </TwoColumns>
   );
 };
+
+export default UrlEncode;

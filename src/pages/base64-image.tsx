@@ -1,7 +1,7 @@
 import { Component, createSignal, Show } from "solid-js";
 import { Column, TwoColumns, ClipboardButton, CodeBlock } from "../components";
 
-export const Base64Image: Component = () => {
+ const Base64Image: Component = () => {
   const [result, setResult] = createSignal("");
 
   const handleChange = (e: any) => {
@@ -48,3 +48,6 @@ export const Base64Image: Component = () => {
     </TwoColumns>
   );
 };
+
+
+export default Base64Image
