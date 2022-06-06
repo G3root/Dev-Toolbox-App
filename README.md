@@ -14,6 +14,35 @@
 > **Warning**
 > This is still a work in progress.
 
+## 🧰 Tools
+
+### Generators
+
+- [x] Lorem Ipsum Generator
+- [x] Hash Generator(MD5, SHA256, SHA512, SHA-3 256, SHA-3 512, Keccak256)
+- [ ] QR-Code Generator
+- [ ] Password generator
+
+### Formatters
+
+- [ ] JSON Format/Validate
+
+### Converters
+
+- [x] Text case converter
+- [x] Image to base64
+- [x] URL Encode/Decode
+- [x] Markdown To Html
+- [x] Base64 Encode/Decode
+- [ ] HTML to JSX
+- [ ] Color Conversion
+
+### Parsers/ Debuggers
+
+- [ ] JWT Debugger
+- [ ] QR-Code Parser
+- [ ] Cron Job Parser
+
 ## 🏃 Running Locally
 
 ```bash
